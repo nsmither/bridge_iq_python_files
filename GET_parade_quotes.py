@@ -30,7 +30,7 @@ if response.status_code == 200:
     df = pd.DataFrame(results_data)
 
     #Check if custom folder exists if not create it
-    custom_folder = f"C:\\Users\\PASVC\Bridge Logistics Inc\\BL-Bi Team - Documents\\bridge_iq\\Data Sets\\parade_quotes_api_files\\{yesterday_year}\\{yesterday_month}\\"
+    custom_folder = f"C:\\Users\\PASVC\\Bridge Logistics Inc\\BL-Bi Team - Documents\\02 BL-Areas\\bridge_iq\\Data Sets\\Parade\\parade_quotes_api_files\\{yesterday_year}\\{yesterday_month}\\"
     if not os.path.exists(custom_folder):
         os.makedirs(custom_folder)
 

@@ -27,8 +27,8 @@ else:
     #print(crm)
     
     #Save exel file
-    custom_folder = "C:\\Users\\PASVC\\Bridge Logistics Inc\\BL-Bi Team - Documents\\bridge_iq\\Data Sets\\CRM\\"
-    excel_file_name = "Contacts_api.xlsx"
+    custom_folder = "C:\\Users\\PASVC\\Bridge Logistics Inc\\BL-Bi Team - Documents\\02 BL-Areas\\bridge_iq\\Data Sets\\CRM\\"
+    excel_file_name = "contacts.xlsx"
     excel_file_path = f"{custom_folder}{excel_file_name}"
 
     crm.to_excel(excel_file_path, index=False)

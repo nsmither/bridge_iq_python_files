@@ -31,7 +31,7 @@ if response.status_code == 200:
 
     # Specify the custom folder and file name with backslashes
     #custom_folder = "C:\\Users\\nsmither.bridgelogistics\\Bridge Logistics Inc\\Business Intelligence - Documents\\bridge_iq\\Data Sets\\parade_orders_api_files\\"
-    custom_folder = f"C:\\Users\\PASVC\\Bridge Logistics Inc\\BL-Bi Team - Documents\\bridge_iq\Data Sets\\parade_orders_api_files\\{yesterday_year}\\{yesterday_month}\\"
+    custom_folder = f"C:\\Users\\PASVC\\Bridge Logistics Inc\\BL-Bi Team - Documents\\02 BL-Areas\\bridge_iq\\Data Sets\\Parade\\parade_orders_api_files\\{yesterday_year}\\{yesterday_month}\\"
     if not os.path.exists(custom_folder):
         os.makedirs(custom_folder)
 
