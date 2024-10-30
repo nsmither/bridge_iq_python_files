@@ -24,13 +24,13 @@ else:
     # Create a DataFrame from the records
     crm= pd.DataFrame(records)
 
-    #print(crm)
+    print(crm)
     
     #Save exel file
-    custom_folder = "C:\\Users\\PASVC\\Bridge Logistics Inc\\BL-Bi Team - Documents\\02 BL-Areas\\bridge_iq\\Data Sets\\CRM\\"
-    excel_file_name = "crm.xlsx"
-    excel_file_path = f"{custom_folder}{excel_file_name}"
+    #custom_folder = "C:\\Users\\PASVC\\Bridge Logistics Inc\\BL-Bi Team - Documents\\02 BL-Areas\\bridge_iq\\Data Sets\\CRM\\"
+    #excel_file_name = "crm.xlsx"
+    #excel_file_path = f"{custom_folder}{excel_file_name}"
 
-    crm.to_excel(excel_file_path, index=False)
+    #crm.to_excel(excel_file_path, index=False)
 
-    print("Data saved to", excel_file_path)
+    #print("Data saved to", excel_file_path)
