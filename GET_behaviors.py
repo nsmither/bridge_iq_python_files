@@ -40,7 +40,7 @@ else:
     # Format the 'date' column as a string
     activities['date'] = activities['date'].dt.strftime('%Y-%m-%d %H:%M:%S')
 
-    custom_folder = f"C:\\Users\\PASVC\\Bridge Logistics Inc\\BL-Bi Team - Documents\\bridge_iq\\Data Sets\\behaviors_api_files\\{current_year_string}\\"
+    custom_folder = f"C:\\Users\\PASVC\\Bridge Logistics Inc\\BL-Bi Team - Documents\\02 BL-Areas\\bridge_iq\\Data Sets\\behaviors_api_files\\{current_year_string}\\"
     if not os.path.exists(custom_folder):
         os.makedirs(custom_folder)
 
