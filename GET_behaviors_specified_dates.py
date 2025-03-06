@@ -9,8 +9,8 @@ username = "nsmither@bridgelogisticsinc.com"
 password = "83b75e5b1ed1151f12bbfc05892a2963d4a24d73"
 
 # Specify the start and end dates
-start_date = "2024-11-01"  # Change this to your desired start date
-end_date = "2024-11-30"  # Change this to your desired end date
+start_date = "2025-02-01"  # Change this to your desired start date
+end_date = "2025-02-28"  # Change this to your desired end date
 
 start_date_obj = datetime.strptime(start_date, '%Y-%m-%d')
 start_date_month_name_year = start_date_obj.strftime('%B%Y')
@@ -41,7 +41,7 @@ else:
     activities['date'] = activities['date'].dt.strftime('%Y-%m-%d %H:%M:%S')
 
     # Save the DataFrame
-    custom_folder = "C:\\Users\\nsmither.bridgelogistics\\Bridge Logistics Inc\\Business Intelligence - Documents\\02 BL-Areas\\bridge_iq\\Data Sets\\behaviors_api_files\\"
+    custom_folder = "C:\\Users\\nsmither.bridgelogistics\\Bridge Logistics Inc\\Business Intelligence - Documents\\02 BL-Areas\\bridge_iq\\Data Sets\\behaviors_api_files\\2025\\"
     excel_file_name = f"{start_date_month_name_year}.xlsx"
     excel_file_path = f"{custom_folder}{excel_file_name}"
     activities.to_excel(excel_file_path, index=False)
