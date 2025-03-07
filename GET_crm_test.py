@@ -19,7 +19,7 @@ else:
     # Search method
     ids = models.execute_kw(db, uid, password, 'crm.lead', 'search', [[]])
     fields = models.execute_kw(db, uid, password, 'crm.lead', 'fields_get', [], {'attributes': ['string', 'help', 'type']})
-    records = models.execute_kw(db, uid, password, 'crm.lead', 'read', [ids], {'fields': ['partner_id','name','x_studio_mcleod_code','user_id','x_studio_sdr','stage_id','date_last_stage_update','activity_date_deadline','date_open','partner_id', 'x_studio_do_not_move','x_studio_lead_type','x_studio_originally_passed_to','x_studio_lead_passed_date','x_studio_enrichment_date','city','x_studio_revenue_range','x_studio_primary_industry','state_id','phone','type','x_date_last_prospect_stage_change','x_stage_id','user_login']})
+    records = models.execute_kw(db, uid, password, 'crm.lead', 'read', [ids], {'fields': ['partner_id','name','x_studio_mcleod_code','x_studio_zoominfo_company_id','user_id','x_studio_sdr','stage_id','date_last_stage_update','activity_date_deadline','date_open','partner_id', 'x_studio_do_not_move','x_studio_lead_type','x_studio_originally_passed_to','x_studio_lead_passed_date','x_studio_enrichment_date','city','x_studio_revenue_range','x_studio_primary_industry','state_id','phone','type','x_date_last_prospect_stage_change','x_stage_id','user_login']})
 
     # Create a DataFrame from the records
     crm= pd.DataFrame(records)
