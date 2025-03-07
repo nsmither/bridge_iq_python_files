@@ -19,7 +19,7 @@ else:
     # Search method
     ids = models.execute_kw(db, uid, password, 'res.partner', 'search', [[['active', '=', True]]])
     fields = models.execute_kw(db, uid, password, 'res.partner', 'fields_get', [], {'attributes': ['string', 'help', 'type']})
-    records = models.execute_kw(db, uid, password, 'res.partner', 'read', [ids], {'fields': ['is_company','parent_id','name', 'is_company','city', 'x_studio_zoominfo_contact_id', 'x_studio_zoominfo_company_id']})
+    records = models.execute_kw(db, uid, password, 'res.partner', 'read', [ids], {'fields': ['is_company','parent_id','name', 'is_company','city','phone','x_studio_zoominfo_contact_id', 'x_studio_zoominfo_company_id']})
 
     # Create a DataFrame from the records
     crm= pd.DataFrame(records)
