@@ -21,7 +21,7 @@ else:
 
     # Define fields to fetch
     fields_to_fetch = [
-        'is_company','x_studio_mcleod_code','parent_id','name','city','phone','parent_id',
+        'is_company','x_studio_mcleod_code','parent_id','name','city','phone','parent_id','email',
         'x_studio_zoominfo_contact_id','user_id','x_studio_sdr','x_studio_last_stage_update','x_studio_zoominfo_company_id',
         'activity_date_deadline','x_studio_lead_type','x_studio_originally_passed_to','x_studio_do_not_move',
         'x_studio_lead_passed_date','x_studio_enrichment_date','x_studio_revenue_range','create_date',
