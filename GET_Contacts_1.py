@@ -24,7 +24,7 @@ else:
         'is_company','x_studio_mcleod_code','parent_id','name','city','phone','parent_id','email',
         'x_studio_zoominfo_contact_id','user_id','x_studio_sdr','x_studio_last_stage_update','x_studio_zoominfo_company_id',
         'activity_date_deadline','x_studio_lead_type','x_studio_originally_passed_to','x_studio_do_not_move',
-        'x_studio_lead_passed_date','x_studio_enrichment_date','x_studio_revenue_range','create_date',
+        'x_studio_lead_passed_date','x_studio_enrichment_date','x_studio_revenue_range','x_studio_last_salesperson_update',
         'x_studio_primary_industry','state_id','x_res_partner_prospecting_stage','x_studio_last_activity_date',
         'x_studio_working_start_date','x_studio_working_end_date','x_studio_no_for_now_start_date','x_studio_no_for_now_end_date',
         'x_studio_hope_island_start_date','x_studio_hope_island_end_date','x_studio_qualified_start_date','x_studio_qualified_end_date',
