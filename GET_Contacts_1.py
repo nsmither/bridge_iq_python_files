@@ -1,5 +1,6 @@
 import xmlrpc.client
 import pandas as pd
+import os
 
 url = "https://bridge-logistics-inc.odoo.com"
 db = "bridge-logistics-master-297285"
@@ -102,10 +103,32 @@ else:
 
     crm['user_login'] = crm['user_id'].apply(extract_user_login)
 
-    # Save to Excel
-    custom_folder = "C:\\Users\\PASVC\\Bridge Logistics Inc\\BL-Bi Team - Documents\\02 BL-Areas\\bridge_iq\\Data Sets\\CRM\\"
+    # Define file paths
     excel_file_name = "new_contacts.xlsx"
-    excel_file_path = f"{custom_folder}{excel_file_name}"
-    crm.to_excel(excel_file_path, index=False)
+    
+    # Original location
+    original_folder = "C:\\Users\\PASVC\\Bridge Logistics Inc\\BL-Bi Team - Documents\\02 BL-Areas\\bridge_iq\\Data Sets\\CRM\\"
+    original_file_path = f"{original_folder}{excel_file_name}"
+    
+    # New location
+    new_folder = "F:\\Odoo Importer\\Odoo Importer 3.0\\"
+    new_file_path = f"{new_folder}{excel_file_name}"
 
-    print("Data saved to", excel_file_path)
+    # Save to both locations
+    try:
+        # Save to original location
+        crm.to_excel(original_file_path, index=False)
+        print(f"Data saved to original location: {original_file_path}")
+    except Exception as e:
+        print(f"Failed to save to original location: {e}")
+
+    try:
+        # Save to new location
+        # Create directory if it doesn't exist
+        os.makedirs(new_folder, exist_ok=True)
+        crm.to_excel(new_file_path, index=False)
+        print(f"Data saved to new location: {new_file_path}")
+    except Exception as e:
+        print(f"Failed to save to new location: {e}")
+
+    print("Export process completed.")
