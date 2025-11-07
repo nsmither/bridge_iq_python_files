@@ -103,34 +103,24 @@ else:
 
     crm['user_login'] = crm['user_id'].apply(extract_user_login)
 
-    # Define file paths
+    # === Define file paths ===
     excel_file_name = "new_contacts.xlsx"
-    
-    # Original location
-    original_folder = r"C:\Users\PASVC\Bridge Logistics Inc\BL-Bi Team - Documents\02 BL-Areas\bridge_iq\Data Sets\CRM"
-    original_file_path = os.path.join(original_folder, excel_file_name)
-    
-    # New location (existing)
-    new_folder = r"F:\Odoo Importer\Odoo Importer 3.0"
-    new_file_path = os.path.join(new_folder, excel_file_name)
 
-    # Extra save location (explicit)
-    extra_folder = r"F:\Odoo Importer\Odoo Importer 3.0"
-    extra_file_path = os.path.join(extra_folder, "new_contacts.xlsx")
+    original_path = r"C:\Users\PASVC\Bridge Logistics Inc\BL-Bi Team - Documents\02 BL-Areas\bridge_iq\Data Sets\CRM\new_contacts.xlsx"
+    backup_path = r"F:\Odoo Importer\Odoo Importer 3.0\new_contacts.xlsx"
 
-    # Save to all three locations
-    save_paths = {
-        "original location": original_file_path,
-        "new location": new_file_path,
-        "extra location": extra_file_path
+    # === Always attempt to save to BOTH locations ===
+    save_targets = {
+        "Primary (CRM Data Folder)": original_path,
+        "Backup (F Drive)": backup_path
     }
 
-    for label, path in save_paths.items():
+    for label, path in save_targets.items():
         try:
             os.makedirs(os.path.dirname(path), exist_ok=True)
             crm.to_excel(path, index=False)
-            print(f"Data saved to {label}: {path}")
+            print(f"Successfully saved to {label}: {path}")
         except Exception as e:
             print(f"Failed to save to {label}: {e}")
 
-    print("Export process completed.")
+    print("Export process completed successfully.")
