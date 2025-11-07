@@ -107,7 +107,7 @@ else:
     excel_file_name = "new_contacts.xlsx"
 
     original_path = r"C:\Users\PASVC\Bridge Logistics Inc\BL-Bi Team - Documents\02 BL-Areas\bridge_iq\Data Sets\CRM\new_contacts.xlsx"
-    backup_path = r"F:\Odoo Importer\Odoo Importer 3.0\new_contacts.xlsx"
+    backup_path = r"J:\Odoo Importer\Odoo Importer 3.0\new_contacts.xlsx"
 
     # === Always attempt to save to BOTH locations ===
     save_targets = {
