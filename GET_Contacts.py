@@ -27,7 +27,7 @@ else:
     #print(crm)
     
     #Save exel file
-    custom_folder = "C:\\Users\\PASVC\\Bridge Logistics Inc\\BL-Bi Team - Documents\\02 BL-Areas\\bridge_iq\\Data Sets\\CRM\\"
+    custom_folder = "C:\\Users\P\ASVC\\OneDrive - Bridge Logistics Inc\\02 BL-Areas\\Business Intelligence - 02 BL-Areas\\bridge_iq\\Data Sets\\CRM\\"
     excel_file_name = "contacts.xlsx"
     excel_file_path = f"{custom_folder}{excel_file_name}"
 

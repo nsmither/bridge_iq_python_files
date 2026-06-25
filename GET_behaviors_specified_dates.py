@@ -41,7 +41,7 @@ else:
     activities['date'] = activities['date'].dt.strftime('%Y-%m-%d %H:%M:%S')
 
     # Save the DataFrame
-    custom_folder = "C:\\Users\\nsmither.bridgelogistics\\Bridge Logistics Inc\\Business Intelligence - Documents\\02 BL-Areas\\bridge_iq\\Data Sets\\behaviors_api_files\\2025\\"
+    custom_folder = "C:\\Users\\PASVC\\OneDrive - Bridge Logistics Inc\\02 BL-Areas\\Business Intelligence - 02 BL-Areas\\bridge_iq\Data Sets\\behaviors_api_files\\2026\\"
     excel_file_name = f"{start_date_month_name_year}.xlsx"
     excel_file_path = f"{custom_folder}{excel_file_name}"
     activities.to_excel(excel_file_path, index=False)
